@@ -12,7 +12,7 @@ include("includes/header.php");
         <div class="col-auto w-25">
             <div class="card card-body ">
 
-                <form action="" method="post">
+                <form action="signup_r.php" method="post">
                     <div class="form-group">
                         <input type="text" name="username" class="form-control" placeholder="Nombre de usuario" autofocus>
                     </div>
