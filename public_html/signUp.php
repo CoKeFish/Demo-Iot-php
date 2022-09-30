@@ -10,9 +10,20 @@ include("includes/header.php");
 
     <div class="row  justify-content-center align-items-center">
         <div class="col-auto w-25">
+
+            <?php
+            if (isset($_SESSION['message'])) { ?>
+
+                <div class="alert alert-<?= $_SESSION['mesagge_type'] ?> alert-dismissible fade show" role="alert">
+                    <?= $_SESSION['message'] ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+            <?php session_unset(); } ?>
+
             <div class="card card-body ">
 
-                <form action="signup_r.php" method="post">
+                <form action="signup_r.php" method="POST">
                     <div class="form-group">
                         <input type="text" name="username" class="form-control" placeholder="Nombre de usuario" autofocus>
                     </div>
