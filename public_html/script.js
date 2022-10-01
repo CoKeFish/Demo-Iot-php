@@ -19,7 +19,7 @@ Encierro todo en una función asíncrona para poder usar async y await cómodame
         borderColor: 'rgba(54, 162, 235, 1)', // Color del borde
         borderWidth: 1, // Ancho del borde
     };
-    window.alert("Holaaas")
+    //window.alert("Holaaas")
     const Temp_Data = {
         label: "Temp_Sensor",
         // Pasar los datos igualmente desde PHP
